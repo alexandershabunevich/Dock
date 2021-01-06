@@ -29,7 +29,7 @@ stages:
       inputs:
         command: build
         repository: $(imageRepository)
-        dockerfile: '$(Build.SourcesDirectory)/nginx/Dockerfile'
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
