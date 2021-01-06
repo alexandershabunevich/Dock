@@ -41,7 +41,3 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
-    - task: variabledehydration@0
-      inputs:
-        prefixes: 'GITVERSION,BUILD'
-        outpath: '$(Build.ArtifactStagingDirectory)'
