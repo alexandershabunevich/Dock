@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  tag: '$(Build.BuildId)'
+  tag: 'github'
   containerRegistry: 'docker.io'
   dockerRegistryServiceConnection: 'a60699dd-9988-4a46-b728-e8bf03784aa8'
   imageRepository: 'alexandershabunevich/nginx'
